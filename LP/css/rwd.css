@@ -1,0 +1,719 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@media only screen and (max-width : 768px){
+
+/*-------------------------------------------------------------------------------------
+スマホ用レイアウト（768px以下スクリーン）
+----------------------------------------------------------------------------------------*/
+h2 {
+    margin: 0.5em;
+    padding: 0em;
+    font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+    line-height: 1.5;
+}
+/*H3タグ*/
+h3 {
+    margin-top: 0.3em;
+	padding: 0em;
+	font-size: 1.13em;
+	font-weight: bold; 
+    line-height: 1.4;
+    text-align: center;
+}
+
+/*H4タグ*/
+h4 {
+	margin: 0em;
+	padding: 0em;
+	font-weight: bold;
+    font-size: 0.95em;
+}
+/*H5タグ*/
+h5 {
+	margin: 0em;
+	padding: 0em;
+	border-bottom: 2px solid #414141;
+	font-weight: bold;
+}
+
+/*--------------------------------------------------
+共通設定(スマホ)
+-----------------------------------------------------*/
+/*body全体の初期スタイル調整*/
+body{
+	width: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+
+}
+
+/*--------------------------------------------------
+全体レイアウト／背景設定（スマホ）
+-----------------------------------------------------*/
+  
+/*全体エリア（全体背景を設定するにはここ）*/
+.main {
+}
+
+/*記事(ボディ)エリア 隙間にmainの背景カラーが出てくる*/
+.article {
+	font-size: 1.6em;
+}
+
+/*記事(ボディ)エリアの行間*/
+.article p {
+	line-height: 1.7em;
+    
+}
+/*カラム全体の幅を変更する*/
+.section_inr, .section_inr_2, .area_cta, .iframe, .jirei_list, .section_inr_ttl, .section_ttl_image, .footer {
+	width: 100%;
+	margin: 0 auto; /*真ん中に要素を置きたいときに使う*/
+}
+
+
+.iframe {
+    display: block;
+    margin: 0em auto;
+}
+
+  /*切り替え----------*/  
+.pc {
+    display: none;
+}
+.sp {
+    display: block;
+}
+/*--------------------------------------------------
+セクション 問い合わせ
+-----------------------------------------------*/
+
+.otoiawase {
+    height: 1300px;
+        width:100%;
+        display: block;
+        margin: 0em auto;
+    }
+    
+
+/*--------------------------------------------------
+見出しタグ設定（スマホ）
+-----------------------------------------------------*/
+
+ .title1{
+	color:#6CB5C3;
+     font-size: 1.3em;
+	border-bottom:1px solid #383737;
+}
+    
+/*フォント*/
+    .pt30{
+        padding-top: 20px;
+    }
+      .pt10{
+        padding-top: 8px;
+    }  
+    
+    
+/*pフォント*/
+p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin:0;
+}
+/*--------------------------------------------------
+上部固定ヘッダー設定
+-----------------------------------------------------*/
+/*上部固定ヘッダー全体*/
+.header {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: 25000;
+}
+    
+/*ヘッダー内部をカラム幅にする*/
+.header_inr {
+	max-width: 100%;
+	margin: 0 0.6em 0 0 ;
+	overflow: hidden;
+}
+    
+        
+    /*ヘッダーのロゴ*/
+.header_logo {
+  width: 45%;
+  float: left;
+  margin: 0;
+  padding:1.5em 0em 0.2em 1em;
+}
+/*ヘッダーの電話ボタン*/
+.header_tel {
+  width: 24%;
+  float: left;
+  margin:  0;
+  padding:0.3em 0.5em 0.4em 0em;
+}
+/*ヘッダーの問い合わせボタン*/
+.header_btn {
+  width: 24%;
+  float: right;
+  margin: 0;
+  padding:0.3em 0.5em 0.4em 0em;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------
+メイン部分(ボディ) ※ここに案件独自のcssを記述していく
+-----------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------
+調整
+-----------------------------------------------------*/
+
+.pt-80 {
+    padding-top: 30px;
+}
+
+.pt-60 {
+    padding-top: 20px; 
+}
+    
+.pt-30 {
+    padding-top: 10px;
+}
+    
+.mb-80 {
+    margin-bottom: 30px;    
+}
+
+.mb-60 {
+    margin-bottom: 20px;    
+}
+
+.mb-30 {
+    margin-bottom: 10px;    
+}
+
+
+/*画像矢印*/
+.under {
+    margin:0;
+    text-align: center;
+    height: 40px;
+    }
+
+
+/*--------------------------------------------------
+ファーストビュー設定
+-----------------------------------------------------*/
+.top_image {
+        width:100%;
+        margin: 0;
+        padding:0;    
+    }    
+
+
+/*--------------------------------------------------
+sectionの設定
+-----------------------------------------------------*/
+.seciton_01 {
+	padding: 0 ;
+    margin: 0;
+	background-image: url("./images/bg_image_nayami4.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.section_01 h2 {
+    font-size:1.05em;
+}
+
+.seciton_02 {
+	padding: 0;
+	margin-top: -1em;
+    background-color: #fff;
+}
+
+.seciton_02 img {
+width:90%;
+}
+
+
+.section_03 {
+    background-size:160%;
+    background-image: url("./images/bg_image_sagyou3.png");
+    background-repeat: no-repeat;
+}
+
+.seciton_04b{
+    display: none;
+}
+
+.seciton_04a{
+    display: block;
+}
+
+.section_06 {
+    font-weight: bold;
+    }
+
+    .section_06 p {
+        margin: 0; 
+        }
+        
+        .com-image {
+            width:200px;
+            height:200px;
+            }
+/*--------------------------------------------------
+sub-section
+-----------------------------------------------------*/
+
+
+.system img {
+    padding: 0;
+    width:100%;
+    }
+
+
+.seciton_ttl {
+        padding:1em ;
+        margin:0;
+        background-image: url("./images/bg_ph3.gif");
+        background-repeat: repeat;
+        background-size:contain;
+    }
+    
+    .seciton_ttl2 {
+        padding:3em ;
+        margin:0;
+        background-image: url("./images/bg_ph3.gif");
+        background-repeat: repeat;
+        background-size:contain;
+    }
+
+
+
+.section_ttl_image {
+       margin:-5em 0;
+    }
+
+ .nayami_txt {
+        width: 100%;
+        margin:0;
+        font-size: 1em;
+        }
+        
+
+ .nayami_image_right {
+   display: none;
+            }
+
+.nayami_image {
+display: none;
+}
+
+.section_inr_box1, .section_inr_box2{
+    margin: 2em 0;
+    border-bottom:none;
+}
+
+.section_inr_box3 {
+    margin: 0em;
+}
+
+.instamark a {
+    display: block;
+    width: 100px;
+ font-size: 13px;
+  }
+
+/*--------------------------------------------------
+  sp用
+-----------------------------------------------------*/
+
+.kinou2 {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:0 1em;
+    }
+
+    .kinou2-txt {
+        padding: 1em;
+        margin-bottom: 1em;
+        width: 100%;
+        border: 1px solid #FF92A0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+
+    .kinou2-txt-box01 {
+        background-image: url("./images/function01.png");
+        background-position: 87%;
+        padding-right: 1em;
+    }
+
+    .kinou2-txt-box02 {
+        background-image: url("./images/function02.png");
+        background-position: 87%;
+        padding-right: 1em;
+    }
+
+    .kinou2-txt-box03 {
+        background-image: url("./images/function03.png");
+        background-position: 87%;
+        padding-right: 1em;
+    }
+
+    .kinou2-txt-box04 {
+        background-image: url("./images/function4.png");
+        background-position: 87%;
+        padding-right: 1em;
+    }
+    
+    .kinou2-txt-box05 {
+        background-image: url("./images/function05.png");
+        background-position: 87%;
+        padding-right: 1em;
+    }
+    
+    .kinou2-txt-box06 {
+        background-image: url("./images/function06.png");
+        background-position: 87%;
+        padding-right: 1em;
+    }
+
+    .kinou2-txt-box07 {
+        background-image: url("./images/function07.png");
+        background-position: 87%;
+        padding-right: 1em;
+    }
+
+/*-項目追加の際ご利用ください------------------------------------------------
+    .kinou2-txt-box08 {
+        background-image: url(#);
+        background-position: 250px;
+        padding-right: 1em;
+    }
+-----------------------------------------------------*/
+
+
+
+/*--------------------------------------------------
+チェックリスト
+-----------------------------------------------------*/
+
+ul.nayami01 {
+    padding: 1em 1.5em 0 2em;
+    background-color: rgba(255,255,255,0.40);
+	border:1px dotted #4A2816;
+
+}
+ul.nayami01 li {
+	background-image: url("./images/icon-check03.png");
+	background-repeat: no-repeat;
+	background-size: 18px;
+	padding-left: 2em;
+    list-style: none;
+}
+
+ul.nayami01 li:last-child {
+    margin-bottom: 1em;
+}
+
+
+/*--------------------------------------------------
+開閉ボタン
+-----------------------------------------------------*/
+
+/*全体*/
+.hidden_box {
+    margin: 0em;/*前後の余白*/
+    padding: 0;
+    text-align: left;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 0em;
+    font-weight: bold;
+    color:#55321F;
+    text-shadow: #fff 1px 2px 1px;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #fff;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 1em 0 2em;
+    height: auto;
+    opacity: 1;
+    background-color: rgba(255,255,255,0.60);
+}
+
+
+.kinou {
+    display:block;
+    }
+    
+    .kinou h3 {
+        background-image: url("./images/bg_ph1.gif");
+        background-repeat: repeat;
+        margin:0em;
+        padding:0.5em;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    .kinou-txt{
+    padding:0;
+    margin:0 0 2em; 
+    width: 100%;
+    }
+    
+    .kinou-txt ol {
+      border: 1px solid #FF92A0;
+      background: #fffafa;
+      padding: 1em 0em 1em 2.3em;
+      height: auto;
+      margin-top: 0;
+    
+    }
+    
+    .kinou-txt ol li {
+      line-height: 1.9;
+      padding: 0.5em 1.5em 0 0.5em; 
+      margin-bottom: 1em;
+    }
+    
+
+
+    .kinou2_txt{
+        margin:0.5em;
+    }
+
+
+/*--------------------------------------------------
+　検証結果
+-----------------------------------------------------*/
+.jirei_list{
+    display: none;
+}
+
+.jirei_list_sp {
+    display: block;
+}
+
+.jirei_list_sp img{
+    width: 100%;
+}
+
+.jirei_list_sp h2 {
+    color: #4A2816;
+    text-align: center;
+    font-size: 1.3em;
+    margin:1em;
+}
+
+
+.jireimae, .jireiato {
+    width:100%;
+    }
+    
+.jirei_txt_sp{
+    margin:1em 2em;
+}
+
+
+.jireimae h3 {
+    color: #6195b6;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 0;
+    padding:0;
+}
+
+
+.jireimae p {
+    font-size: 0.95em;
+    line-height: 1.8em;
+    color: #202020;
+    padding:1em;
+}
+
+.jireiato h3 {
+    color: #ee5f72;
+    text-align: center;
+    margin: 1.5em 0 1em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+.jireiato p {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.8em;
+    padding:1em;
+}
+
+
+
+.jirei_list_sp .jireiato p:last-child {
+border-bottom: 1px dotted #414141;
+padding-bottom: 2em;
+}
+
+
+/*--------------------------------------------------
+テーブル設定
+-----------------------------------------------------*/
+table {
+	width: 100%;
+	border-top: none;
+	border-left:none;
+	margin:  0em;
+}
+th, td {
+	padding: 1em;
+	border-right: none;
+	border-bottom: 1px solid #ccc;
+    font-size:12px;
+}
+th {
+	background-color: #f0f0f0;
+	font-weight: bold;
+	text-align: center;
+    margin: 0em;
+    padding:0.3em;
+    font-size:12px;
+}
+td {
+	background-color: #fff;
+	text-align: left;
+    padding-left: 2.5em;
+}
+
+table td, table th {
+    display: block;
+    width: 100%;
+  }
+
+
+table {
+    border-collapse: collapse;
+  }
+  table td, table th {
+    display: block;
+    padding: none;
+    margin: none;
+  }
+  table th {
+    background-color: #eee;
+  }
+
+
+
+
+/*--------------------------------------------------
+q&a
+-----------------------------------------------------*/
+.box_qa {
+    background-color: #FCE5E8;
+}
+
+.box_qa_q {
+    background-color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid #FCE5E8;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ee5f72;
+}
+
+.box_qa_q p {
+    text-indent: 0em;
+}
+
+
+.box_qa_a {
+    background-color: #fff;
+    padding: 0.5em 1em;
+    line-height: 1.8;
+}
+
+.box_qa_a p {
+    text-indent: 0em;
+}
+
+
+
+/*--------------------------------------------------
+CTAエリア
+-----------------------------------------------------*/
+
+.seciton_cta {
+	padding-top: 0;
+	margin: 0 ;
+	background-color:#ffffff;
+}
+
+.area_cta {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.area_cta_inr {
+   margin:0 ;
+   padding:1em 0em;
+	text-align: center;
+}
+
+
+
+/*--------------------------------------------------
+フッター部分
+-----------------------------------------------------*/
+.footer {
+	background-color: #FF92A0;
+	padding: 2em 0em;
+	text-align: center;
+    line-height: 2.4em;
+	font-size: 1.1em;
+	color: #fff;
+}
+
+.small {
+    margin:10px;
+}
+
+
+}

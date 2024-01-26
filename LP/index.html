@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--ページタイトル-->
+  <title>かんたん便利な訪問スケジュール作成 MeetsBee</title>
+
+  <meta name="description"
+    content="かんたん操作で訪問スケジュールをラクラク作成! 最新スケジュールは即座に共有可能です！現場で働く訪問看護師の声を基にした便利機能も多数搭載。MeetsBee（ミーツビー）は、訪問看護の現場で鍛えられたクラウド型スケジュール管理システムです。">
+  <!--スマホ用のviewport設定-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrapの読み込み -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--ファビコンの設定-->
+  <link href="./images/favicon.ico" rel="shortcut icon">
+  <!--リセットCSSの読み込み-->
+  <link href="./css/sanitize.css" rel="stylesheet">
+  <!--スタイルの読み込み（PC用）-->
+  <link href="./css/style.css" rel="stylesheet">
+  <!--スタイルの読み込み（スマホ用）-->
+  <link href="./css/rwd.css" rel="stylesheet">
+  <!--ヘルパークラスの読み込み-->
+  <link href="./css/advanced.css" rel="stylesheet">
+  <!--google fonts iconの読み込み-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--formの読み込み-->
+  <link href="./contact.html" rel="stylesheet">
+  <!--fontawesomeのコード-->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1BYW8047X"></script>
+  
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-P1BYW8047X');
+    gtag('config', 'UA-89958213-2');
+
+    gtag('config', 'AW-816646659');
+  </script>
+
+  <!-- Ptengine Tag -->
+  <!-- <script src="https://js.ptengine.jp/5d3htk3i.js"></script> -->
+  <!-- End Ptengine Tag -->
+
+  <!-- Begin Mieruca Embed Code -->
+ <script type="text/javascript" id="mierucajs">
+  window.__fid = window.__fid || [];__fid.push([826504390]);
+  (function() {
+  function mieruca(){if(typeof window.__fjsld != "undefined") return; window.__fjsld = 1; var fjs = document.createElement('script'); fjs.type = 'text/javascript'; fjs.async = true; fjs.id = "fjssync"; var timestamp = new Date;fjs.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://hm.mieru-ca.com/service/js/mieruca-hm.js?v='+ timestamp.getTime(); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(fjs, x); };
+  setTimeout(mieruca, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent("onload", mieruca) : window.addEventListener("load", mieruca, false)) : mieruca();
+  })();
+  </script>
+  <!-- End Mieruca Embed Code -->
+
+</head>
+
+<body>
+
+  <!------------------ ヒートマップ計測用 --------------------------->
+  <!-- 賢瓦 -->
+  <script type="text/javascript" charset="utf-8" src="https://kenga.tech/heatmaps-aesjrelgfkjiovnk.js"></script>
+  <!-- Ptengine Tag -->
+  <script src="https://js.ptengine.jp/5d3htk3i.js"></script>
+
+<!-- End Ptengine Tag -->
+  <!------------------上部固定ヘッダーはここから---------------------->
+
+<header class="header">
+    <!--ヘッダーの内側部分ここから-->
+    <div class="header_inr">
+
+      <!--ロゴマーク-->
+      <div class="header_logo"><a href="#home"><img src="./images/hd_logo.png" alt="" /></a><div style="font-size: 30px; font-weight: bold;">【製品名】</div></div>
+
+      <div class="header_links">
+        <div><a href="" class="header_link">基本機能</a></div>
+        <div><a href="" class="header_link">カスタマイズ</a></div>
+        
+        <div></div>
+        <!-- お問い合わせボタン -->
+        <a href="" class="btn btn--orange btn--radius"
+          style="background: linear-gradient(gold, orange); font-weight: bold;">無料お問い合わせ</a>
+      </div>
+      
+
+      <!-- <div class="header_tel"><a href="tel:050-5576-4868"><img class="call-btn" src="./images/hd_tel3.png" alt="" /></a></div>
+      <div class="header_btn"><a href="#Inquiry"><img class="call-btn" src="./images/hd_btn2.png" alt="" /> </a></div> -->
+    </div>
+
+    <!--ヘッダーの内側部分ここまで-->
+  </header>
+  <!------------------上部固定ヘッダーはここまで---------------------->
+  <!------------------記事（ボディ）部分ここから---------------------->
+
+  <main class="main" style="background-color: rgba(80, 90, 255, 0.1);">
+  
+    <!--ファーストビューここから-->
+
+    
+    <section style="padding-top: 130px; padding-bottom: 110px;">
+      <div class="flex-to">
+        <div class="flex-to-item">
+          <img src="./images/top-image.png" width="90%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+        </div>
+        <div class="flex-to-item">
+          <p>
+            <span style="font-weight: bold; font-size: 30px;">あなたのスケジュール、あなたのルールで。</span><br><br>
+            <!-- <span style="font-weight: bold;">あなた専用スケジュールシステム</span><br> -->
+            <span style="font-weight: bold; font-size: 30px; margin-left: 20px;">【製品名】</span><br>
+          </p>
+          <a href="" class="btn btn--orange btn--radius" style="margin: 20px 0px 0px 300px; background: linear-gradient(gold, orange); font-weight: bold;">無料お問い合わせ</a>
+          <!-- <a href="#Inquiry" style="margin: 200px 0px 0px 150px;"><img src="./images/btn_on.png" width="30%"></a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="fv">
+      <div class="flex-fv">
+        <div class="item item-01">
+          <p class="fv-title">簡単楽々<br>スケジュール作成</p>
+          <br>
+          <p class="fv-subtitle">訪問看護のスケジュール作成を楽に！</p>
+          <br>
+          <p class="fv-subtitle">アルコールチェックもできます！</p>
+          <br>
+        </div>
+        <div class="item item-02"><img src="./images/top_image.webp" width="100%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+        </div>
+      </div>
+    </section> -->
+
+  </div>
+    <!--ファーストビューここまで-->
+
+    <div style="margin-top: 200px;"></div>
+
+    <article class="article">
+
+      <div>
+        <section class="seciton_01">
+          <div class="mb-30"></div>
+
+          <p class="sv-title">困っていませんか？</p>
+
+          <div class="flex-sv">
+            <div class="item">
+              明日の訪問予定はどこだっけ？
+            </div>
+            <div class="item">
+              毎週予定組むの大変
+            </div>
+            <div class="item">
+              もっと効率の良いルートはないものか？
+            </div>
+            <div class="item">
+              他にこんな機能があったらいいのに...
+            </div>
+          </div>
+
+          <div class="m-section"></div>
+        </section>
+
+        <section class="seciton_02">
+        <h2>本製品の特徴</h2>
+        <div class="mb-30"></div>
+        <div class="flex-sv">
+          <div class="item">
+            <span style="color:red; font-size: 1.5rem;">一目でわかりやすい</span>スケジュール表を作成
+          </div>
+          <div class="item">
+            定期予定の訪問先を登録しておけば、次回以降の訪問スケジュールを<span style="color:red; font-size: 1.5rem;">自動作成</span>。
+          </div>
+          <div class="item">
+            本システム独自の仕組みを採用し、<span style="color:red; font-size: 1.5rem;">訪問ルートを作成</span>。
+          </div>
+          <div class="item">
+            <span style="color:red; font-size: 1.5rem;">機能追加のカスタマイズ</span>可能、よりご要望に合ったソフトにバージョンアップ
+          </div>
+        </div>
+      </div>
+      <div class="mb-80"></div>
+
+      <section class="section_03">
+        <h2>基本機能の紹介</h2>
+        <div class="mb-30"></div>
+
+
+        <div class="flex-ki">
+          <div class="item">
+            <div style="text-align: center;"><img src="./images/schedule.png" width="50%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+            <div>
+              <h3>スケジュール作成・編集</h3>
+              <p style="font-weight: bold; margin-bottom: 40px; text-align: center;">
+                拠点・訪問車両毎にスケジュール登録ができます。
+                その日どの患者様に訪問するか一目でわかります。
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div style="text-align: center;"><img src="./images/map.png" width="50%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+            <div >
+              <h3>訪問ルート作成</h3>
+              <p style="font-weight: bold; margin-bottom: 40px; text-align: center;">
+                スケジュールに登録した予定のルートをボタン一つで総距離・移動時間が最適化されたルートを表示します。 
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div style="text-align: center;"><img src="./images/print.png" width="50%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+            <div>
+              <h3>印刷プレビュー</h3>
+              <p style="font-weight: bold; margin-bottom: 40px; text-align: center;">
+                該当日のスケジュールのプレビュー画面を表示することができます。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="grid-ki">
+          <div class="grid-ki-item"><img src="./images/function06.png" width="50%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+          <div>
+            <h3>スケジュール作成・編集</h3>
+            <p style="font-weight: bold; margin-bottom: 40px;">
+              拠点毎にスケジュール登録ができます。
+              定期予定や外来、来客まで幅広い予定作成に対応しています。
+            </p>
+
+            <h3>訪問ルート作成</h3>
+            <p style="font-weight: bold; margin-bottom: 40px;">
+              訪問ルートの表示が可能です。
+              またボタン一つで総距離・移動時間が最適化されたルートを表示します。
+            </p>
+
+            <h3>拠点・施設・患者登録</h3>
+            <p style="font-weight: bold; margin-bottom: 40px;">
+              拠点ごとの車両・担当医の登録
+              施設の登録
+              患者の登録
+              施設と患者は紐づけが可能になります。
+            </p>
+
+            <h3>持ち物チェック機能</h3>
+            <p style="font-weight: bold; margin-bottom: 40px;">
+              チェックリストは編集が可能で、必要に合わせて持ち物リストを作成することで忘れ物防止になります。
+            </p>
+
+            <h3>印刷</h3>
+            <p style="font-weight: bold; margin-bottom: 40px;">
+              該当日のスケジュールを印刷し、共有ができます。
+            </p>
+          </div>
+        </div> -->
+
+        <div class="mb-80"></div>
+
+      <section>
+        <h2>カスタマイズ事例</h2>
+        <div class="mb-30"></div>
+
+        <div class="flex-ka">
+          <p class="flex-ka-item1">訪問診療</p>
+          <p class="flex-ka-item2" style="font-weight: bold;">
+            【インフルエンザワクチン管理機能】<br><br>
+             拠点毎にワクチンの在庫管理ができます。<br>
+             リアルタイムに残数が反映されるため、<br>
+             在庫状況の把握がより正確にわかります。
+          </p>
+          <img class="flex-ka-item3" src="./images/vaccine.png" width="40%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+        </div>
+
+        <div class="flex-ka">
+          <p class="flex-ka-item1">訪問歯科</p>
+          <img class="flex-ka-item3" src="./images/achievement.png" width="40%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          <p class="flex-ka-item2" style="font-weight: bold;">
+            【実績登録】<br>
+            日々の実績を登録し、毎月何人訪問したのか記録が残るようになります。
+            <br>
+          </p>
+        </div>
+
+        <div class="flex-ka">
+          <p class="flex-ka-item1">訪問眼科</p>
+          <p class="flex-ka-item2" style="font-weight: bold;">
+            【シンプルな訪問管理機能】<br>
+             電子カルテは別システムで管理しているため、
+             スケジュール管理や情報共有に特化したシンプルな活用方法も可能です。
+             出先でもスマートフォンやタブレットから確認ができます。
+          </p>
+          <img class="flex-ka-item3" src="./images/ganka.png" width="40%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+        </div>
+
+        <!-- <div class="grid-ki">
+          <div class="grid-ki-item">
+            <p>訪問診療</p>
+            <p style="font-weight: bold;">
+              【インフルエンザワクチン管理機能】<br>
+               ワクチンの在庫を管理できます。
+               今年何人接種予定者が居て、在庫にワクチンがどのくらいあるか把握することができます。
+               また拠点が複数あった場合、拠点毎にどの拠点が足りなくてどの拠点が余っているか等も把握できます。<br>
+            </p>
+            <p style="font-weight: bold;">
+              【オンライン診療機能】<br>
+               お客様のスマートフォンとビデオ通話して診療することができます。
+               遠隔地の患者様診療や、二次感染の予防に役立ちます。<br>
+            </p>
+            <p style="font-weight: bold;">
+              【決済代行機能】<br>
+               オンライン診療等で診療した患者様に対して、決済用のURLをお送りして決済をすることができます。<br>
+            </p>
+            <img src="./images/function06.png" width="50%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+          <div></div>
+        </div>
+
+        <div class="grid-ki">
+          <div></div>
+          <div class="grid-ki-item">
+            <p>訪問歯科</p>
+            <p>実績、タイスケ？</p>
+            <img src="./images/function06.png" width="50%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+        </div>
+
+        <div class="grid-ki">
+          <div class="grid-ki-item">
+            <p>訪問眼科</p>
+            <p style="font-weight: bold;">
+              【xxx】<br>
+               xxxxxxxxx<br>
+            </p>
+            <img src="./images/function06.png" width="50%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+          <div></div>
+        </div> -->
+      </section>
+
+      <div class="mb-80"></div>
+
+      <!-- <section>
+        <h2>お客様の声</h2>
+        <div class="mb-30"></div>
+
+        <div class="grid-ok">
+          <div class="grid-ok-item"><img src="./images/function06.png" width="40%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+          <div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                  <div class="grid-ok-item"><img src="./images/function06.png" width="30%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+                    <p style="color: black; padding-bottom: 50px;">
+                      <a href="#" style="margin-top: 50px; font-weight: bold; font-size: 25px;">xxx様</a><br>
+                      このシステム最高です。皆さんも使ってみてください。<br>
+                      このシステム最高です。皆さんも使ってみてください。
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid-ok-item"><img src="./images/function06.png" width="30%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+                    <p style="color: black; padding-bottom: 50px;">
+                      <a href="#" style="margin-top: 50px; font-weight: bold; font-size: 25px;">xxx様</a><br>
+                      このシステム最高です。皆さんも使ってみてください。<br>
+                      このシステム最高です。皆さんも使ってみてください。
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="grid-ok-item"><img src="./images/function06.png" width="30%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" /></div>
+                    <p style="color: black; padding-bottom: 50px;">
+                      <a href="#" style="margin-top: 50px; font-weight: bold; font-size: 25px;">xxx様</a><br>
+                      このシステム最高です。皆さんも使ってみてください。<br>
+                      このシステム最高です。皆さんも使ってみてください。
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+          </div>
+        </div>
+      </section> -->
+      
+      <div class="mb-80"></div>
+
+      <!-- <section>
+        <h2>ご利用までの流れ</h2>
+        <div class="mb-30"></div>
+
+        <div class="grid-go">
+          <div class="grid-go-item1">
+            <div>〇週間</div>
+            <img src="./images/right_arrow.png" width="100%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+          <div class="grid-go-item2">
+            <div>1.お問い合わせ</div>
+            <img src="./images/riyou1.png" width="80%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+          <div class="grid-go-item3">
+            <div>2.ヒアリング</div>
+            <img src="./images/riyou2.png" width="80%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+          <div class="grid-go-item4">
+            <div>3.契約</div>
+            <img src="./images/riyou3.png" width="65%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+          <div class="grid-go-item5">
+            <div>4.運用</div>
+            <img src="./images/riyou4.png" width="65%" alt="訪問看護 効率化サービス MeetsBee ミーツビー" />
+          </div>
+        </div>
+      </section> -->
+
+      <div class="mb-80"></div>
+
+      <!-- <section>
+        <h2>FAQ</h2>
+        <div class="mb-30"></div>
+        <div class="flex-fa">
+          <div class="flex-fa-item">
+            <div>Q</div>
+            <div>A</div>
+          </div>
+          <div class="flex-fa-item">
+            <div>Q</div>
+            <div>A</div>
+          </div>
+          <div class="flex-fa-item">
+            <div>Q</div>
+            <div>A</div>
+          </div>
+          <div class="flex-fa-item">
+            <div>Q</div>
+            <div>A</div>
+          </div>
+        </div>
+      </section> -->
+
+      <div class="mb-80"></div>
+
+      <!-- <section class="seciton_cta">
+        <div class="area_cta">
+          <div class="area_cta_inr">
+            <h2>是非お問合せください！</h2>
+            <a href="#Inquiry"><img src="./images/btn_on.png" width="100%"></a>
+          </div>
+        </div>
+      </section> -->
+      
+
+      <section class="seciton_com">
+        <div class="seciton_ttl">
+          <h2>会社概要・特商法</h2>
+        </div>
+
+        <div class="section_inr">
+
+          <table class="company">
+            <div class="pt-60"></div>
+            <tr>
+              <th>製品名</th>
+              <td>【製品名】</td>
+            </tr>
+            <tr>
+              <th width="25%">販売会社名</th>
+              <td width="608">株式会社 ベガシステム　VEGA Systems Inc.</td>
+            </tr>
+
+            <tr>
+              <th>所在地</th>
+              <td>【本社】<br>
+                〒194-0005<br>
+                東京都町田市南町田５丁目２−１<br>
+                <br>
+                【長野出張所】<br>
+                〒399-0737<br>
+                長野県塩尻市大門八番町1-2<br>
+                塩尻インキュベーションプラザ111号室<br>
+              </td>
+            </tr>
+            <tr>
+              <th>電話番号・FAX</th>
+              <td>
+                【本社】<br>
+                TEL：042-799-4709　FAX：042-799-4530<br>
+                <br>
+                【長野出張所】<br>
+                TEL：0263-31-5898　FAX：0263-31-5899
+              </td>
+            </tr>
+
+            <tr>
+              <th>ホームページ URL</th>
+              <td><a href="https://www.vega-net.co.jp/">ホームページ</a></td>
+            </tr>
+
+          </table>
+        </div>
+      </section>
+
+    </article>
+
+    <div class="pt-80"></div>
+
+    <!-- お問い合わせ -->
+
+<!-- <script src="https://ssl.form-mailer.jp/formfiles/js/embed.js"></script>
+<div class="formmailer-embed" data-form-hash="4401f424807510" data-form-host="ssl.form-mailer.jp"></div> -->
+
+    <section class="seciton_privacy" style="text-align: center; font-size: 14px;">
+      <a href="https://www.vega-net.co.jp/privacypolicy">個人情報保護方針</a>　　
+      <a href="https://www.vega-net.co.jp/privacy-inst">個人情報の取り扱いについて</a>　　
+      <a href="https://www.vega-net.co.jp/privacy-kaiji">個人情報の開示等の手続について</a>
+    </section>
+  </main>
+
+  <!------------------記事（ボディ）部分ここまで---------------------->
+
+  <!------------------フッターここから---------------------->
+  <footer class="footer">
+    <p class="small">Copyright2023(C) 訪問看護効率化サービス MeetsBee All Rights Reseved.</p>
+  </footer>
+  <!------------------フッターここまで-------------------->
+</body>
+
+</html>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+  // ページネーションが必要なら追加
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  // ナビボタンが必要なら追加
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
+</script>
